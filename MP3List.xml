@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mp3list>
+ <songs>
+    	<song url="alerauen.mp3" name="ale rauen birthday party 1" album="album ale" img="imgs/capa1.gif"></song>
+        <song url="alerauen2.mp3" name="ale rauen birthday party 2" album="album ale2" img="imgs/capa2.gif"></song>
+		<song url="alerauen3.mp3" name="ale rauen birthday party 3" album="album ale3" img="imgs/capa3.gif"></song>
+		<song url="alerauen4.mp3" name="ale rauen birthday party 4" album="album ale4" img="imgs/capa4.gif"></song>
+    </songs>
+</mp3list>

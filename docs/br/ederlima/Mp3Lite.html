@@ -1,0 +1,957 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../print.css" type="text/css" media="print">
+<meta content="Mp3Lite,br.ederlima.Mp3Lite,getActualTimeNumber,getActualTimeString,getArtistName,getBytesLoaded,getBytesTotal,getExecutionPercentage,getLoadedPercentage,getSongId,getSongName,getStatus,getTotalTimeNumber,getTotalTimeString,volume,first,last,next,pause,play,playFrom,previous,seekToPercent,seekToTime,setID3Info,setPlaylist,setProgress,setTimeInfo,setVolume,setXMLList,start,stop,toggleMute,toggleRepeating,toggleShuffling,uniqueSound" name="keywords">
+<title>br.ederlima.Mp3Lite</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Mp3Lite - API Documentation';
+				var baseRef = '../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">Mp3Lite - Class Reference</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../all-classes.html')" href="../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../all-classes.html')" href="../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../index-list.html')" href="../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../index.html?br/ederlima/Mp3Lite.html&amp;br/ederlima/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Mp3Lite</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Mp3Lite"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">br.ederlima</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Mp3Lite</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Mp3Lite <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+</table>
+<p></p>
+  <h1>Mp3Lite Class - Release 2.0 </h1>
+   <br />by Eder Lima & Leo Cavalcante
+   <br />Release 2.0
+   <br />02/22/2009
+   <br /><a href="http://www.ederlima.com.br/blog/mp3lite">http://www.ederlima.com.br/blog/mp3lite</a>
+   <br />Free for use, not for redistribute
+   <br />Don't host this file, please use links to refer to author's website
+   <br />Thank you for choosing Mp3Lite!
+   <br />Our special thanks to Rafael Lima (http://www.rafael-lima.com/) for calculate totallength of streamming songs.
+   <br />Eder Lima & Leo Cavalcante
+   <br /><strong>English Documentation at http://www.ederlima.com.br/blog/mp3lite2/#english (Soon)</strong>
+  <br />Documentação em Português http://www.ederlima.com.br/blog/mp3lite2
+   <br />
+   <h2>Como utilizar:</h2>
+   <span style="color:#0000FF"><br />import Mp3Lite;
+   <br />import Mp3Event;
+   <br />var myplayer:Mp3Lite = new Mp3Lite();
+   <br />myplayer.setXMLList("playlist.xml");
+   <br />myplayer.addEventListener(Mp3Event.ON_START, function(e) {trace("Let's rock!"});
+   <br />myplayer.start();</span>
+   <br />
+   <h2>Confira abaixo os métodos e propriedades da Mp3Lite</h2>
+  
+ <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getActualTimeNumber">getActualTimeNumber</a> : int<div class="summaryTableDescription">[read-only]
+   Retorna o tempo atual em Int
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getActualTimeString">getActualTimeString</a> : String<div class="summaryTableDescription">[read-only]
+   Retorna a String do tempo atual no formato 00:00
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getArtistName">getArtistName</a> : String<div class="summaryTableDescription">[read-only]
+   Retorna o nome do artista
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getBytesLoaded">getBytesLoaded</a> : Number<div class="summaryTableDescription">[read-only]
+   Retorna os bytes carregados
+  </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getBytesTotal">getBytesTotal</a> : Number<div class="summaryTableDescription">[read-only]
+   Retorna o total de bytes de cada música
+  </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getExecutionPercentage">getExecutionPercentage</a> : int<div class="summaryTableDescription">[read-only]
+   Retorna o percentual da execução de cada música
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getLoadedPercentage">getLoadedPercentage</a> : int<div class="summaryTableDescription">[read-only]
+   Retorna o percentual carregado de cada música
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getSongId">getSongId</a> : int<div class="summaryTableDescription">[read-only]
+   Retorna o id atual da música na playlist
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getSongName">getSongName</a> : String<div class="summaryTableDescription">[read-only]
+   Retorna o nome da música
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getStatus">getStatus</a> : String<div class="summaryTableDescription">[read-only]
+   Retorna o status da reprodução
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getTotalTimeNumber">getTotalTimeNumber</a> : int<div class="summaryTableDescription">[read-only]
+   Retorna o tempo total em Int
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#getTotalTimeString">getTotalTimeString</a> : String<div class="summaryTableDescription">[read-only]
+   Retorna a String do tempo total no formato 00:00
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#volume">volume</a> : Number<div class="summaryTableDescription">
+   Retorna o volume atual
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Mp3Lite()">Mp3Lite</a>()</div>
+<div class="summaryTableDescription">
+   Construtor da Classe 
+  </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#first()">first</a>():void</div>
+<div class="summaryTableDescription">
+   Toca a primeira música da playlist 
+  </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#last()">last</a>():void</div>
+<div class="summaryTableDescription">
+   Toca a última música da playlist 
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#next()">next</a>():void</div>
+<div class="summaryTableDescription">
+   Avança para a próxima música na playlist
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#pause()">pause</a>():void</div>
+<div class="summaryTableDescription">
+   Para a reprodução permitindo reinício a partir do ponto onde parou
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#play()">play</a>():void</div>
+<div class="summaryTableDescription">
+   Inicia Reprodução da Música
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#playFrom()">playFrom</a>(SongNumber:int = 0, loop:Boolean = false):void</div>
+<div class="summaryTableDescription">
+   Inicia a reprodução a partir da música informada como índice
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#previous()">previous</a>():void</div>
+<div class="summaryTableDescription">
+   Retrocede uma música na playlist
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#seekToPercent()">seekToPercent</a>(percentual:int):void</div>
+<div class="summaryTableDescription">
+   Salta a reprodução para o percentual informado
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#seekToTime()">seekToTime</a>(time:int):void</div>
+<div class="summaryTableDescription">
+   Salta a reprodução para o tempo informado
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setID3Info()">setID3Info</a>(artistName:TextField, soundName:TextField, noID3msg:String = "No ID3 Information"):void</div>
+<div class="summaryTableDescription">
+   Configura as caixas de texto que irão receber a informação do artista e nome da música
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setPlaylist()">setPlaylist</a>(obj:MovieClip, listWidth:Number, customFormat:TextFormat = null):void</div>
+<div class="summaryTableDescription">
+   Configura uma playlist informando onde será inserida, largura e o formato(TextFormat)
+   Para usar este método informando uma variável do tipo TextFormat 
+   é necessário inserir a fonte usada na Biblioteca
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setProgress()">setProgress</a>(progress:MovieClip, seek:MovieClip, bg:MovieClip, btnMode:Boolean = true):void</div>
+<div class="summaryTableDescription">
+   Define 3 objetos para representarem a barra de progresso, barra de procura (seek), 
+   barra de fundo (usado no cálculo) e uso ou não do buttonMode
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setTimeInfo()">setTimeInfo</a>(buff:TextField, actual:TextField, total:TextField):void</div>
+<div class="summaryTableDescription">
+   Define 3 caixas de texto para informar o status da reprodução, o tempo atual e o tempo total da música
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setVolume()">setVolume</a>(volume:Number = 1):void</div>
+<div class="summaryTableDescription">
+   Configura o volume da reprodução (valor entre 0 e 2)
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setXMLList()">setXMLList</a>(xmlURL:String):void</div>
+<div class="summaryTableDescription">
+   Configura a Lista XML que portará as músicas
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#start()">start</a>(SongId:int = 0, buffertime:Number = 1000):void</div>
+<div class="summaryTableDescription">
+   Inicia a execução da classe
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#stop()">stop</a>():void</div>
+<div class="summaryTableDescription">
+   Para a reprodução
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toggleMute()">toggleMute</a>():void</div>
+<div class="summaryTableDescription">
+   Reduz o volume para 0 ou retorna para o volume anterior
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toggleRepeating()">toggleRepeating</a>():void</div>
+<div class="summaryTableDescription">
+   Configura/Desconfigura o player para repetir a música atual
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toggleShuffling()">toggleShuffling</a>():void</div>
+<div class="summaryTableDescription">
+   Configura/Desconfigura o player para tocar aleatoriamente
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#uniqueSound()">uniqueSound</a>(song:String, loop:Boolean = false):void</div>
+<div class="summaryTableDescription">
+   Toca uma única música
+   </div>
+</td><td class="summaryTableOwnerCol">Mp3Lite</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="getActualTimeNumber"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getActualTimeNumber</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getActualTimeNumber:int</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o tempo atual em Int
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getActualTimeNumber():int</code>
+<br>
+</div>
+<a name="getActualTimeString"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getActualTimeString</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getActualTimeString:String</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna a String do tempo atual no formato 00:00
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getActualTimeString():String</code>
+<br>
+</div>
+<a name="getArtistName"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getArtistName</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getArtistName:String</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o nome do artista
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getArtistName():String</code>
+<br>
+</div>
+<a name="getBytesLoaded"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getBytesLoaded</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getBytesLoaded:Number</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna os bytes carregados
+  </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getBytesLoaded():Number</code>
+<br>
+</div>
+<a name="getBytesTotal"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getBytesTotal</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getBytesTotal:Number</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o total de bytes de cada música
+  </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getBytesTotal():Number</code>
+<br>
+</div>
+<a name="getExecutionPercentage"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getExecutionPercentage</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getExecutionPercentage:int</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o percentual da execução de cada música
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getExecutionPercentage():int</code>
+<br>
+</div>
+<a name="getLoadedPercentage"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getLoadedPercentage</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getLoadedPercentage:int</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o percentual carregado de cada música
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getLoadedPercentage():int</code>
+<br>
+</div>
+<a name="getSongId"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getSongId</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getSongId:int</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o id atual da música na playlist
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getSongId():int</code>
+<br>
+</div>
+<a name="getSongName"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getSongName</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getSongName:String</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o nome da música
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getSongName():String</code>
+<br>
+</div>
+<a name="getStatus"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getStatus</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getStatus:String</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o status da reprodução
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getStatus():String</code>
+<br>
+</div>
+<a name="getTotalTimeNumber"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getTotalTimeNumber</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getTotalTimeNumber:int</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna o tempo total em Int
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getTotalTimeNumber():int</code>
+<br>
+</div>
+<a name="getTotalTimeString"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getTotalTimeString</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>getTotalTimeString:String</code>&nbsp;&nbsp;[read-only]<p>
+   Retorna a String do tempo total no formato 00:00
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get getTotalTimeString():String</code>
+<br>
+</div>
+<a name="volume"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">volume</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>volume:Number</code>&nbsp;&nbsp;[read-write]<p>
+   Retorna o volume atual
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get volume():Number</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set volume(value:Number):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Mp3Lite()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Mp3Lite</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Mp3Lite()</code><p>
+   Construtor da Classe 
+  </p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="first()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">first</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function first():void</code><p>
+   Toca a primeira música da playlist 
+  </p></div>
+<a name="last()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">last</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function last():void</code><p>
+   Toca a última música da playlist 
+   </p></div>
+<a name="next()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">next</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function next():void</code><p>
+   Avança para a próxima música na playlist
+   </p></div>
+<a name="pause()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pause</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function pause():void</code><p>
+   Para a reprodução permitindo reinício a partir do ponto onde parou
+   </p></div>
+<a name="play()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">play</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function play():void</code><p>
+   Inicia Reprodução da Música
+   </p></div>
+<a name="playFrom()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">playFrom</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function playFrom(SongNumber:int = 0, loop:Boolean = false):void</code><p>
+   Inicia a reprodução a partir da música informada como índice
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">SongNumber</span>:int</code> (default = <code>0</code>)<code></code> &mdash; Id da música (numérico)
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">loop</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Define se usa loop ou não (Boolean)
+   </td>
+</tr>
+</table>
+</div>
+<a name="previous()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">previous</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function previous():void</code><p>
+   Retrocede uma música na playlist
+   </p></div>
+<a name="seekToPercent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">seekToPercent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function seekToPercent(percentual:int):void</code><p>
+   Salta a reprodução para o percentual informado
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">percentual</span>:int</code> &mdash; Valor inteiro de 0 a 100
+   </td>
+</tr>
+</table>
+</div>
+<a name="seekToTime()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">seekToTime</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function seekToTime(time:int):void</code><p>
+   Salta a reprodução para o tempo informado
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">time</span>:int</code> &mdash; Valor inteiro em segundos. Exemplo: 1:30  = (90)
+   </td>
+</tr>
+</table>
+</div>
+<a name="setID3Info()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setID3Info</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setID3Info(artistName:TextField, soundName:TextField, noID3msg:String = "No ID3 Information"):void</code><p>
+   Configura as caixas de texto que irão receber a informação do artista e nome da música
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">artistName</span>:TextField</code> &mdash; Campo de texto dinâmico para receber o nome do artista
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">soundName</span>:TextField</code> &mdash; Campo de texto dinâmico para receber o nome da música
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">noID3msg</span>:String</code> (default = "<code>No ID3 Information</code>")<code></code> &mdash; Mensagem padrão para informação não encontrada (String)
+   </td>
+</tr>
+</table>
+</div>
+<a name="setPlaylist()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setPlaylist</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setPlaylist(obj:MovieClip, listWidth:Number, customFormat:TextFormat = null):void</code><p>
+   Configura uma playlist informando onde será inserida, largura e o formato(TextFormat)
+   Para usar este método informando uma variável do tipo TextFormat 
+   é necessário inserir a fonte usada na Biblioteca
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">obj</span>:MovieClip</code> &mdash; MovieClip que receberá a Playlist
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">listWidth</span>:Number</code> &mdash; Largura da playlist
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">customFormat</span>:TextFormat</code> (default = <code>null</code>)<code></code> &mdash; Objeto TextFormat contendo a formatação da Playlist (Obrigatório a inclusão da fonte na biblioteca)
+   </td>
+</tr>
+</table>
+</div>
+<a name="setProgress()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setProgress</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setProgress(progress:MovieClip, seek:MovieClip, bg:MovieClip, btnMode:Boolean = true):void</code><p>
+   Define 3 objetos para representarem a barra de progresso, barra de procura (seek), 
+   barra de fundo (usado no cálculo) e uso ou não do buttonMode
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">progress</span>:MovieClip</code> &mdash; MovieClip para representar a barra de progresso
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">seek</span>:MovieClip</code> &mdash; MovieClip para representar a barra de procura
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bg</span>:MovieClip</code> &mdash; MovieClip de fundo (essencial para o cálculo preciso)
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">btnMode</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; Define se usa HandCursor (Boolean)
+   </td>
+</tr>
+</table>
+</div>
+<a name="setTimeInfo()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setTimeInfo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setTimeInfo(buff:TextField, actual:TextField, total:TextField):void</code><p>
+   Define 3 caixas de texto para informar o status da reprodução, o tempo atual e o tempo total da música
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">buff</span>:TextField</code> &mdash; Campo de texto dinâmico para receber o status do buffer
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">actual</span>:TextField</code> &mdash; Campo de texto dinâmico para receber o tempo atual
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">total</span>:TextField</code> &mdash; Campo de texto dinâmico para receber o tempo total
+   </td>
+</tr>
+</table>
+</div>
+<a name="setVolume()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setVolume(volume:Number = 1):void</code><p>
+   Configura o volume da reprodução (valor entre 0 e 2)
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">volume</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Valor inteiro de 0 a 2 (0% a 200%, Default = 1)
+   </td>
+</tr>
+</table>
+</div>
+<a name="setXMLList()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setXMLList</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setXMLList(xmlURL:String):void</code><p>
+   Configura a Lista XML que portará as músicas
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">xmlURL</span>:String</code> &mdash; URL do xml
+   </td>
+</tr>
+</table>
+</div>
+<a name="start()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">start</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function start(SongId:int = 0, buffertime:Number = 1000):void</code><p>
+   Inicia a execução da classe
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">SongId</span>:int</code> (default = <code>0</code>)<code></code> &mdash; Número que corresponde ao id da música da qual quer iniciar a reprodução (Default = 0, primeira)
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">buffertime</span>:Number</code> (default = <code>1000</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="stop()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">stop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function stop():void</code><p>
+   Para a reprodução
+   </p></div>
+<a name="toggleMute()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toggleMute</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toggleMute():void</code><p>
+   Reduz o volume para 0 ou retorna para o volume anterior
+   </p></div>
+<a name="toggleRepeating()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toggleRepeating</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toggleRepeating():void</code><p>
+   Configura/Desconfigura o player para repetir a música atual
+   </p></div>
+<a name="toggleShuffling()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toggleShuffling</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toggleShuffling():void</code><p>
+   Configura/Desconfigura o player para tocar aleatoriamente
+   </p></div>
+<a name="uniqueSound()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">uniqueSound</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function uniqueSound(song:String, loop:Boolean = false):void</code><p>
+   Toca uma única música
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">song</span>:String</code> &mdash; O endereço da Música
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">loop</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Define se usa loop ou não (Boolean)
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
